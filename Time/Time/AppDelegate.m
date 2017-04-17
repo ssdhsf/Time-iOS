@@ -16,6 +16,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+   
+    [UIManager makeKeyAndVisible];
+    // 启动画面的显示时间为2秒
+    [NSThread sleepForTimeInterval:1.0];
+    [OSHelper setKeyChainValue];
+
     // Override point for customization after application launch.
     return YES;
 }

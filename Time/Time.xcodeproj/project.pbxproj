@@ -18,6 +18,10 @@
 		777558851EA111A800B20D40 /* UIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 777558841EA111A800B20D40 /* UIManager.m */; };
 		777558891EA117A600B20D40 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 777558881EA117A600B20D40 /* ThemeManager.m */; };
 		7775588D1EA117DD00B20D40 /* ThemeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7775588C1EA117DD00B20D40 /* ThemeNavigationController.m */; };
+		77755B931EA50E0300B20D40 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77755B921EA50E0300B20D40 /* Entitlements.plist */; };
+		77755B971EA50E9C00B20D40 /* OSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755B961EA50E9C00B20D40 /* OSHelper.m */; };
+		77755B9B1EA50EEA00B20D40 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755B9A1EA50EEA00B20D40 /* KeychainItemWrapper.m */; };
+		77755B9E1EA5110B00B20D40 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755B9D1EA5110B00B20D40 /* Global.m */; };
 		92075D633DF6DD7930F30921 /* libPods-Time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 382FC5678BAD06060534C32A /* libPods-Time.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +68,13 @@
 		777558881EA117A600B20D40 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
 		7775588B1EA117DD00B20D40 /* ThemeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeNavigationController.h; sourceTree = "<group>"; };
 		7775588C1EA117DD00B20D40 /* ThemeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeNavigationController.m; sourceTree = "<group>"; };
+		77755B921EA50E0300B20D40 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		77755B951EA50E9C00B20D40 /* OSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSHelper.h; sourceTree = "<group>"; };
+		77755B961EA50E9C00B20D40 /* OSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSHelper.m; sourceTree = "<group>"; };
+		77755B991EA50EEA00B20D40 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		77755B9A1EA50EEA00B20D40 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		77755B9C1EA5110B00B20D40 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		77755B9D1EA5110B00B20D40 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
 		876A9BE46B940F79E2CBE1F7 /* Pods-Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time/Pods-Time.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +163,7 @@
 		77191B141E9E746100AE4C82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				77755B921EA50E0300B20D40 /* Entitlements.plist */,
 				77191B151E9E746100AE4C82 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -224,6 +236,8 @@
 		7775587F1EA10E3A00B20D40 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				77755B9C1EA5110B00B20D40 /* Global.h */,
+				77755B9D1EA5110B00B20D40 /* Global.m */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -231,6 +245,7 @@
 		777558801EA10E4500B20D40 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				77755B981EA50EEA00B20D40 /* Keychain */,
 			);
 			name = Vendors;
 			sourceTree = "<group>";
@@ -238,6 +253,7 @@
 		777558811EA10FC200B20D40 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				77755B941EA50E8A00B20D40 /* Manager */,
 				777558821EA1116D00B20D40 /* Heper */,
 			);
 			name = General;
@@ -246,10 +262,8 @@
 		777558821EA1116D00B20D40 /* Heper */ = {
 			isa = PBXGroup;
 			children = (
-				777558831EA111A800B20D40 /* UIManager.h */,
-				777558841EA111A800B20D40 /* UIManager.m */,
-				777558871EA117A600B20D40 /* ThemeManager.h */,
-				777558881EA117A600B20D40 /* ThemeManager.m */,
+				77755B951EA50E9C00B20D40 /* OSHelper.h */,
+				77755B961EA50E9C00B20D40 /* OSHelper.m */,
 			);
 			name = Heper;
 			sourceTree = "<group>";
@@ -282,6 +296,26 @@
 			children = (
 			);
 			name = MyInfoViewController;
+			sourceTree = "<group>";
+		};
+		77755B941EA50E8A00B20D40 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				777558831EA111A800B20D40 /* UIManager.h */,
+				777558841EA111A800B20D40 /* UIManager.m */,
+				777558871EA117A600B20D40 /* ThemeManager.h */,
+				777558881EA117A600B20D40 /* ThemeManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		77755B981EA50EEA00B20D40 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				77755B991EA50EEA00B20D40 /* KeychainItemWrapper.h */,
+				77755B9A1EA50EEA00B20D40 /* KeychainItemWrapper.m */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 		BED0FEA86C3F843FA5F3A30F /* Pods */ = {
@@ -405,6 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77755B931EA50E0300B20D40 /* Entitlements.plist in Resources */,
 				77191B241E9E746100AE4C82 /* LaunchScreen.storyboard in Resources */,
 				77191B211E9E746100AE4C82 /* Assets.xcassets in Resources */,
 				77191B1F1E9E746100AE4C82 /* Main.storyboard in Resources */,
@@ -482,8 +517,11 @@
 			files = (
 				77191B1C1E9E746100AE4C82 /* ViewController.m in Sources */,
 				77191B191E9E746100AE4C82 /* AppDelegate.m in Sources */,
+				77755B971EA50E9C00B20D40 /* OSHelper.m in Sources */,
 				777558891EA117A600B20D40 /* ThemeManager.m in Sources */,
+				77755B9B1EA50EEA00B20D40 /* KeychainItemWrapper.m in Sources */,
 				7775588D1EA117DD00B20D40 /* ThemeNavigationController.m in Sources */,
+				77755B9E1EA5110B00B20D40 /* Global.m in Sources */,
 				77191B161E9E746100AE4C82 /* main.m in Sources */,
 				777558851EA111A800B20D40 /* UIManager.m in Sources */,
 			);

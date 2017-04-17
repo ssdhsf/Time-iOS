@@ -39,8 +39,9 @@
     [self.navigationBar setBackgroundImage:[[ThemeManager shareInstance]getThemeImage:@"navigationBar_background_blue"] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setBackgroundImage:[[ThemeManager shareInstance]getThemeImage:@"navigationBar_background_blue"] forBarMetrics:UIBarMetricsDefault];
 }
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
+
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
     if ([navigationController isKindOfClass:[UIImagePickerController class]]) {
         [[UIApplication sharedApplication] setStatusBarHidden:NO];
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];

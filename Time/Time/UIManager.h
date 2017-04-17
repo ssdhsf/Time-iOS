@@ -24,7 +24,7 @@
 /**
  *  进入主界面
  */
-+ (void)goMianViewController;
+//+ (void)goMianViewController;
 
 
 @end
