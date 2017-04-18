@@ -8,10 +8,10 @@
 
 #import "Global.h"
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "RSAUtil.h"
-#import "AESCrypt.h"
+//#import "RSAUtil.h"
+//#import "AESCrypt.h"
 #import "AppDelegate.h"
-#import "Base64.h"
+//#import "Base64.h"
 
 @implementation Global
 
@@ -34,49 +34,49 @@
 }
 
 #pragma mark - Global functions
-- (MBProgressHUD *)createProgressHUDInView:(UIView *)view withMessage:(NSString *)message {
-  MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-  hud.mode = MBProgressHUDModeIndeterminate;
-
-  if (message) {
-    hud.labelText = message;
-  } else {
-    hud.labelText = @"正在加载";
-  }
-
-  return hud;
-}
-
-- (void)showToastInCenter:(UIView *)view withMessage:(id )message {
-    
-    NSString *string = [NSString stringWithFormat:@"%@",message];
-  // 针对网络连接失败时的提示信息处理
-  
-    if ([string rangeOfString:@"NSURLErrorDomain"].location != NSNotFound || [string rangeOfString:@"NSCocoaErrorDomain"].location != NSNotFound) {
-        string = @"网络连接失败";
-    }
-    
-//  NSArray *errorDomains = @[ @"NSURLErrorDomain", @"NSCocoaErrorDomain" ];
-//  if ([errorDomains containsObject:string]) {
-//    string = @"网络连接失败";
+//- (MBProgressHUD *)createProgressHUDInView:(UIView *)view withMessage:(NSString *)message {
+//  MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+//  hud.mode = MBProgressHUDModeIndeterminate;
+//
+//  if (message) {
+//    hud.labelText = message;
+//  } else {
+//    hud.labelText = @"正在加载";
 //  }
-  [view makeToast:string duration:1.0 position:CSToastPositionCenter];
-}
+//
+//  return hud;
+//}
 
-- (void)showToastInTop:(UIView *)view withMessage:(NSString *)message {
-  // 针对网络连接失败时的提示信息处理
-    
-    NSString *string = [NSString stringWithFormat:@"%@",message];
-    if ([string rangeOfString:@"NSURLErrorDomain"].location != NSNotFound || [string rangeOfString:@"NSCocoaErrorDomain"].location != NSNotFound) {
-        string = @"网络连接失败";
-        
-    }
-//  NSArray *errorDomains = @[ @"NSURLErrorDomain", @"NSCocoaErrorDomain" ];
-//  if ([errorDomains containsObject:message]) {
-//    message = @"网络连接失败";
-//  }
-  [view makeToast:string duration:0.3 position:CSToastPositionTop];
-}
+//- (void)showToastInCenter:(UIView *)view withMessage:(id )message {
+//    
+//    NSString *string = [NSString stringWithFormat:@"%@",message];
+//  // 针对网络连接失败时的提示信息处理
+//  
+//    if ([string rangeOfString:@"NSURLErrorDomain"].location != NSNotFound || [string rangeOfString:@"NSCocoaErrorDomain"].location != NSNotFound) {
+//        string = @"网络连接失败";
+//    }
+//    
+////  NSArray *errorDomains = @[ @"NSURLErrorDomain", @"NSCocoaErrorDomain" ];
+////  if ([errorDomains containsObject:string]) {
+////    string = @"网络连接失败";
+////  }
+//  [view makeToast:string duration:1.0 position:CSToastPositionCenter];
+//}
+
+//- (void)showToastInTop:(UIView *)view withMessage:(NSString *)message {
+//  // 针对网络连接失败时的提示信息处理
+//    
+//    NSString *string = [NSString stringWithFormat:@"%@",message];
+//    if ([string rangeOfString:@"NSURLErrorDomain"].location != NSNotFound || [string rangeOfString:@"NSCocoaErrorDomain"].location != NSNotFound) {
+//        string = @"网络连接失败";
+//        
+//    }
+////  NSArray *errorDomains = @[ @"NSURLErrorDomain", @"NSCocoaErrorDomain" ];
+////  if ([errorDomains containsObject:message]) {
+////    message = @"网络连接失败";
+////  }
+//  [view makeToast:string duration:0.3 position:CSToastPositionTop];
+//}
 
 
 - (void)showToastInCenter:(UIView *)view withError:(NSError *)error;{
@@ -294,29 +294,29 @@
   return YES;
 }
 
-+ (id)dictionaryWithAESString:(id)responseObject{
-  
-  NSLog(@"responseObject=%@",responseObject);
-  NSLog(@"SECRETKEY=%@",[[Global sharedSingleton] getUserDefaultsWithKey:SECRETKEY]);
-  if ([responseObject isKindOfClass:[NSString class]]) {
-    // AES加密
-    NSString *jsonString = [AESCrypt decrypt:responseObject password:[[Global sharedSingleton] getUserDefaultsWithKey:SECRETKEY]];
-    NSLog(@"%@",jsonString);
-    if ([jsonString isEqualToString:@""]) {
-      return nil;
-    }
-    if ([jsonString isEqualToString:@"null"]) {
-      return nil;
-    }
-    NSDictionary *jsonDic = [self dictionaryWithJsonString:jsonString];
-    
-    return jsonDic;
-  }else{
-    return responseObject;
-  }
-
-}
-
+//+ (id)dictionaryWithAESString:(id)responseObject{
+//  
+//  NSLog(@"responseObject=%@",responseObject);
+//  NSLog(@"SECRETKEY=%@",[[Global sharedSingleton] getUserDefaultsWithKey:SECRETKEY]);
+//  if ([responseObject isKindOfClass:[NSString class]]) {
+//    // AES加密
+//    NSString *jsonString = [AESCrypt decrypt:responseObject password:[[Global sharedSingleton] getUserDefaultsWithKey:SECRETKEY]];
+//    NSLog(@"%@",jsonString);
+//    if ([jsonString isEqualToString:@""]) {
+//      return nil;
+//    }
+//    if ([jsonString isEqualToString:@"null"]) {
+//      return nil;
+//    }
+//    NSDictionary *jsonDic = [self dictionaryWithJsonString:jsonString];
+//    
+//    return jsonDic;
+//  }else{
+//    return responseObject;
+//  }
+//
+//}
+//
 
 +(NSString *)ret32bitString
 

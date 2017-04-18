@@ -50,8 +50,8 @@
 //    ThemeNavigationController *nav3 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ApplicationMainViewController"]];
 //    ThemeNavigationController *nav4 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"MineMainViewController"]];
     
-    [nav1 setTitle:@"扫码" tabBarItemImageName:@"tabbar_icon_home_default" tabBarItemSelectedImageName:@"tabbar_icon_home_selected"];
-    [nav2 setTitle:@"我的" tabBarItemImageName:@"tabbar_icon_contact_default" tabBarItemSelectedImageName:@"tabbar_icon_contact_selected"];
+    [nav1 setTitle:@"扫码" tabBarItemImageName:@"tabbar_icon_code_default" tabBarItemSelectedImageName:@"tabbar_icon_code_default"];
+    [nav2 setTitle:@"我的" tabBarItemImageName:@"tabbar_icon_my_default" tabBarItemSelectedImageName:@"tabbar_icon_my_default"];
     NSArray*array = @[nav1,nav2];
     tabBarController.viewControllers = array;
 //    [tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"tabBar_background_blue"]];
@@ -60,6 +60,7 @@
 //    if([[UserManager shareUserManager] isLogin]) { //TODO判断用户是否登录  暂时不做
     
     appDelegate.window.rootViewController = appDelegate.tabBarController;
+    [appDelegate.window makeKeyAndVisible];
     [appDelegate.window makeKeyAndVisible];
         
 //    } else {  //进入登录页面

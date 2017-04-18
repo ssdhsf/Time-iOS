@@ -20,8 +20,12 @@
 		7775588D1EA117DD00B20D40 /* ThemeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7775588C1EA117DD00B20D40 /* ThemeNavigationController.m */; };
 		77755B931EA50E0300B20D40 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77755B921EA50E0300B20D40 /* Entitlements.plist */; };
 		77755B971EA50E9C00B20D40 /* OSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755B961EA50E9C00B20D40 /* OSHelper.m */; };
-		77755B9B1EA50EEA00B20D40 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755B9A1EA50EEA00B20D40 /* KeychainItemWrapper.m */; };
+		77755B9B1EA50EEA00B20D40 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755B9A1EA50EEA00B20D40 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		77755B9E1EA5110B00B20D40 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755B9D1EA5110B00B20D40 /* Global.m */; };
+		77755BA21EA5154200B20D40 /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755BA01EA5154200B20D40 /* CodeViewController.m */; };
+		77755BA31EA5154200B20D40 /* CodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77755BA11EA5154200B20D40 /* CodeViewController.xib */; };
+		77755BA71EA5155900B20D40 /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755BA51EA5155900B20D40 /* MyInfoViewController.m */; };
+		77755BA81EA5155900B20D40 /* MyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77755BA61EA5155900B20D40 /* MyInfoViewController.xib */; };
 		92075D633DF6DD7930F30921 /* libPods-Time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 382FC5678BAD06060534C32A /* libPods-Time.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,12 @@
 		77755B9A1EA50EEA00B20D40 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		77755B9C1EA5110B00B20D40 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		77755B9D1EA5110B00B20D40 /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
+		77755B9F1EA5154200B20D40 /* CodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeViewController.h; sourceTree = "<group>"; };
+		77755BA01EA5154200B20D40 /* CodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeViewController.m; sourceTree = "<group>"; };
+		77755BA11EA5154200B20D40 /* CodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CodeViewController.xib; sourceTree = "<group>"; };
+		77755BA41EA5155900B20D40 /* MyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoViewController.h; sourceTree = "<group>"; };
+		77755BA51EA5155900B20D40 /* MyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = "<group>"; };
+		77755BA61EA5155900B20D40 /* MyInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyInfoViewController.xib; sourceTree = "<group>"; };
 		876A9BE46B940F79E2CBE1F7 /* Pods-Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time/Pods-Time.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -280,6 +290,9 @@
 		7775588E1EA119F500B20D40 /* CodeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				77755B9F1EA5154200B20D40 /* CodeViewController.h */,
+				77755BA01EA5154200B20D40 /* CodeViewController.m */,
+				77755BA11EA5154200B20D40 /* CodeViewController.xib */,
 			);
 			name = CodeViewController;
 			sourceTree = "<group>";
@@ -294,6 +307,9 @@
 		777558901EA11A4300B20D40 /* MyInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
+				77755BA41EA5155900B20D40 /* MyInfoViewController.h */,
+				77755BA51EA5155900B20D40 /* MyInfoViewController.m */,
+				77755BA61EA5155900B20D40 /* MyInfoViewController.xib */,
 			);
 			name = MyInfoViewController;
 			sourceTree = "<group>";
@@ -439,9 +455,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77755BA81EA5155900B20D40 /* MyInfoViewController.xib in Resources */,
 				77755B931EA50E0300B20D40 /* Entitlements.plist in Resources */,
 				77191B241E9E746100AE4C82 /* LaunchScreen.storyboard in Resources */,
 				77191B211E9E746100AE4C82 /* Assets.xcassets in Resources */,
+				77755BA31EA5154200B20D40 /* CodeViewController.xib in Resources */,
 				77191B1F1E9E746100AE4C82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,7 +538,9 @@
 				77755B971EA50E9C00B20D40 /* OSHelper.m in Sources */,
 				777558891EA117A600B20D40 /* ThemeManager.m in Sources */,
 				77755B9B1EA50EEA00B20D40 /* KeychainItemWrapper.m in Sources */,
+				77755BA21EA5154200B20D40 /* CodeViewController.m in Sources */,
 				7775588D1EA117DD00B20D40 /* ThemeNavigationController.m in Sources */,
+				77755BA71EA5155900B20D40 /* MyInfoViewController.m in Sources */,
 				77755B9E1EA5110B00B20D40 /* Global.m in Sources */,
 				77191B161E9E746100AE4C82 /* main.m in Sources */,
 				777558851EA111A800B20D40 /* UIManager.m in Sources */,
