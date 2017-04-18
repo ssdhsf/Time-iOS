@@ -47,12 +47,14 @@
     UITabBarController *tabBarController=[[UITabBarController alloc]init];
     ThemeNavigationController *nav1 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ChatViewController"]];
     ThemeNavigationController *nav2 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ContactsMainViewController"]];
+    ThemeNavigationController *nav3 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ContactsMainViewController"]];
 //    ThemeNavigationController *nav3 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ApplicationMainViewController"]];
 //    ThemeNavigationController *nav4 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"MineMainViewController"]];
     
-    [nav1 setTitle:@"扫码" tabBarItemImageName:@"tabbar_icon_code_default" tabBarItemSelectedImageName:@"tabbar_icon_code_default"];
-    [nav2 setTitle:@"我的" tabBarItemImageName:@"tabbar_icon_my_default" tabBarItemSelectedImageName:@"tabbar_icon_my_default"];
-    NSArray*array = @[nav1,nav2];
+    [nav1 setTitle:@"首页" tabBarItemImageName:@"tabbar_icon_home_default" tabBarItemSelectedImageName:@"tabbar_icon_home_default"];
+    [nav2 setTitle:@"扫码" tabBarItemImageName:@"tabbar_icon_code_default" tabBarItemSelectedImageName:@"tabbar_icon_code_select"];
+    [nav3 setTitle:@"我的" tabBarItemImageName:@"tabbar_icon_my_default" tabBarItemSelectedImageName:@"tabbar_icon_my_select"];
+    NSArray*array = @[nav1,nav2,nav3];
     tabBarController.viewControllers = array;
 //    [tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"tabBar_background_blue"]];
     appDelegate.tabBarController = tabBarController;
