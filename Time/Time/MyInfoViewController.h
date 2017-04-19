@@ -8,6 +8,6 @@
 
 #import "ViewController.h"
 
-@interface MyInfoViewController : ViewController
+@interface MyInfoViewController : BaseViewController
 
 @end

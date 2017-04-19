@@ -1,18 +1,18 @@
 //
-//  MyInfoViewController.m
+//  HomeViewController.m
 //  Time
 //
-//  Created by huangli on 2017/4/17.
+//  Created by huangli on 2017/4/19.
 //  Copyright © 2017年 Time. All rights reserved.
 //
 
-#import "MyInfoViewController.h"
+#import "HomeViewController.h"
 
-@interface MyInfoViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation MyInfoViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,7 +21,7 @@
 
 - (void)initNavigationBarItems{
     
-    self.title = @"我";
+    self.title = @"首页";
 }
 
 - (void)didReceiveMemoryWarning {

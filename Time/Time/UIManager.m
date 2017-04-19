@@ -45,11 +45,9 @@
     AppDelegate * appDelegate = [[self class] appDelegate];
     appDelegate.window = [[self class] newWindow];
     UITabBarController *tabBarController=[[UITabBarController alloc]init];
-    ThemeNavigationController *nav1 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ChatViewController"]];
-    ThemeNavigationController *nav2 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ContactsMainViewController"]];
-    ThemeNavigationController *nav3 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ContactsMainViewController"]];
-//    ThemeNavigationController *nav3 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ApplicationMainViewController"]];
-//    ThemeNavigationController *nav4 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"MineMainViewController"]];
+    ThemeNavigationController *nav1 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"HomeViewController"]];
+    ThemeNavigationController *nav2 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"CodeViewController"]];
+    ThemeNavigationController *nav3 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"MyInfoViewController"]];
     
     [nav1 setTitle:@"首页" tabBarItemImageName:@"tabbar_icon_home_default" tabBarItemSelectedImageName:@"tabbar_icon_home_default"];
     [nav2 setTitle:@"扫码" tabBarItemImageName:@"tabbar_icon_code_default" tabBarItemSelectedImageName:@"tabbar_icon_code_select"];
