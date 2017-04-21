@@ -101,5 +101,9 @@
     return vc;
 }
 
++ (void)setStatusBarStyle{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+}
+
 
 @end

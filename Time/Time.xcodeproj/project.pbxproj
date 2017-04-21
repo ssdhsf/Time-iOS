@@ -30,6 +30,8 @@
 		77755BB41EA7958300B20D40 /* UIViewController+BarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755BB31EA7958300B20D40 /* UIViewController+BarItem.m */; };
 		77755BB91EA7972D00B20D40 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755BB71EA7972D00B20D40 /* HomeViewController.m */; };
 		77755BBA1EA7972D00B20D40 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77755BB81EA7972D00B20D40 /* HomeViewController.xib */; };
+		77FC78BF1EAA4CF6000880BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FC78BE1EAA4CF6000880BD /* UIKit.framework */; };
+		77FC78C11EAA5333000880BD /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77FC78C01EAA5333000880BD /* Config.plist */; };
 		92075D633DF6DD7930F30921 /* libPods-Time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 382FC5678BAD06060534C32A /* libPods-Time.a */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,10 @@
 		77755BB61EA7972D00B20D40 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		77755BB71EA7972D00B20D40 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		77755BB81EA7972D00B20D40 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		77FC78BE1EAA4CF6000880BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		77FC78C01EAA5333000880BD /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		77FC78C21EAA53BB000880BD /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		77FC78C31EAA5AED000880BD /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		876A9BE46B940F79E2CBE1F7 /* Pods-Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time/Pods-Time.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FC78BF1EAA4CF6000880BD /* UIKit.framework in Frameworks */,
 				92075D633DF6DD7930F30921 /* libPods-Time.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +135,7 @@
 		5354205BB570B3FC7FEF9CC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77FC78BE1EAA4CF6000880BD /* UIKit.framework */,
 				382FC5678BAD06060534C32A /* libPods-Time.a */,
 			);
 			name = Frameworks;
@@ -186,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				77755B921EA50E0300B20D40 /* Entitlements.plist */,
+				77FC78C01EAA5333000880BD /* Config.plist */,
 				77191B151E9E746100AE4C82 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -251,6 +260,8 @@
 		7775587E1EA10E2800B20D40 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				77FC78C21EAA53BB000880BD /* Config.h */,
+				77FC78C31EAA5AED000880BD /* Macros.h */,
 			);
 			name = Macros;
 			sourceTree = "<group>";
@@ -501,6 +512,7 @@
 				77755B931EA50E0300B20D40 /* Entitlements.plist in Resources */,
 				77191B241E9E746100AE4C82 /* LaunchScreen.storyboard in Resources */,
 				77191B211E9E746100AE4C82 /* Assets.xcassets in Resources */,
+				77FC78C11EAA5333000880BD /* Config.plist in Resources */,
 				77755BA31EA5154200B20D40 /* CodeViewController.xib in Resources */,
 				77755BBA1EA7972D00B20D40 /* HomeViewController.xib in Resources */,
 				77191B1F1E9E746100AE4C82 /* Main.storyboard in Resources */,
@@ -740,6 +752,7 @@
 				DEVELOPMENT_TEAM = K7HH48G2MB;
 				GCC_PREFIX_HEADER = Time/PrefixHeader.pch;
 				INFOPLIST_FILE = Time/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.time.Time;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -754,6 +767,7 @@
 				DEVELOPMENT_TEAM = K7HH48G2MB;
 				GCC_PREFIX_HEADER = Time/PrefixHeader.pch;
 				INFOPLIST_FILE = Time/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.time.Time;
 				PRODUCT_NAME = "$(TARGET_NAME)";

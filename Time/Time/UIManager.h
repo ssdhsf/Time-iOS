@@ -26,5 +26,7 @@
  */
 //+ (void)goMianViewController;
 
+//设置状态栏
++ (void)setStatusBarStyle;
 
 @end

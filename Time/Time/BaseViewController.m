@@ -7,7 +7,6 @@
 //
 
 #import "BaseViewController.h"
-//#import <MobClick.h>
 
 @interface BaseViewController ()
 
@@ -45,21 +44,23 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+   
     [super viewWillAppear:animated];
     // 针对搜索列表点击进去后的情况
     [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
     //友盟统计页面
     NSString *className= NSStringFromClass(self.class);
-//    [MobClick beginLogPageView:className];
+    [MobClick beginLogPageView:className];
  }
 
 - (void)viewWillDisappear:(BOOL)animated {
+   
     [super viewWillDisappear:animated];
     
     //友盟统计页面
     NSString *className= NSStringFromClass(self.class);
-//    [MobClick endLogPageView:className];
+    [MobClick endLogPageView:className];
 }
 
 #pragma mark - 初始化数据,由子类重写改方法
