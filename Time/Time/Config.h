@@ -75,9 +75,6 @@
 //  setTitleTextAttributes: \
 //  [NSDictionary dictionaryWithObjectsAndKeys:XNavItemFont, NSFontAttributeName, [UIColor whiteColor], NSForegroundColorAttributeName, nil] forState : UIControlStateNormal
 //
-//// 当前版本号
-//#define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-//#define XcodeAppBuild [[[NSBundle mainBundle] infoDictionary]   objectForKey:@"CFBundleVersion"]
 //
 //// 错误类型
 //#define IsInLoginView @"InLoginView" //标记是否在登陆页

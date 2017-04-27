@@ -9,6 +9,11 @@
 #ifndef Macros_h
 #define Macros_h
 
+
+// 当前版本号
+#define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define XcodeAppBuild [[[NSBundle mainBundle] infoDictionary]   objectForKey:@"CFBundleVersion"]
+
 // 当前设备的屏幕宽度
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeigh [UIScreen mainScreen].bounds.size.height

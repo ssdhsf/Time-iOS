@@ -17,10 +17,9 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar_background_blue"]forBarMetrics:UIBarMetricsDefault];
 
     [self setLeftCustomBarItem:@"icon_back" action:@selector(back)];
-        [self hideNavigationBlackLine];
+    [self hideNavigationBlackLine];
     [self addSwipeBack];
     [self initData];
     [self initView];
@@ -73,6 +72,8 @@
 
 #pragma mark - 初始化navigationBar,由子类重写改方法
 - (void)initNavigationBarItems {
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar_background_blue"]forBarMetrics:UIBarMetricsDefault];
 }
 
 #pragma mark - 手势返回上级视图

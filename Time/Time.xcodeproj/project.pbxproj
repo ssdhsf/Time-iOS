@@ -32,6 +32,8 @@
 		77755BBA1EA7972D00B20D40 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77755BB81EA7972D00B20D40 /* HomeViewController.xib */; };
 		77FC78BF1EAA4CF6000880BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FC78BE1EAA4CF6000880BD /* UIKit.framework */; };
 		77FC78C11EAA5333000880BD /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77FC78C01EAA5333000880BD /* Config.plist */; };
+		77FC78C61EAA5EEA000880BD /* BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FC78C51EAA5EEA000880BD /* BaseTableViewDataSource.m */; };
+		77FC78C91EAA5F0B000880BD /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FC78C81EAA5F0B000880BD /* BaseTableViewController.m */; };
 		92075D633DF6DD7930F30921 /* libPods-Time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 382FC5678BAD06060534C32A /* libPods-Time.a */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +104,10 @@
 		77FC78C01EAA5333000880BD /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		77FC78C21EAA53BB000880BD /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		77FC78C31EAA5AED000880BD /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		77FC78C41EAA5EEA000880BD /* BaseTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewDataSource.h; sourceTree = "<group>"; };
+		77FC78C51EAA5EEA000880BD /* BaseTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewDataSource.m; sourceTree = "<group>"; };
+		77FC78C71EAA5F0A000880BD /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		77FC78C81EAA5F0B000880BD /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		876A9BE46B940F79E2CBE1F7 /* Pods-Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time/Pods-Time.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,15 +327,6 @@
 			name = CodeViewController;
 			sourceTree = "<group>";
 		};
-		7775588F1EA11A2F00B20D40 /* BaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				77755BAE1EA794BF00B20D40 /* BaseViewController.h */,
-				77755BAF1EA794BF00B20D40 /* BaseViewController.m */,
-			);
-			name = BaseViewController;
-			sourceTree = "<group>";
-		};
 		777558901EA11A4300B20D40 /* MyInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,7 +360,12 @@
 		77755BAD1EA7947800B20D40 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				7775588F1EA11A2F00B20D40 /* BaseViewController */,
+				77755BAE1EA794BF00B20D40 /* BaseViewController.h */,
+				77755BAF1EA794BF00B20D40 /* BaseViewController.m */,
+				77FC78C71EAA5F0A000880BD /* BaseTableViewController.h */,
+				77FC78C81EAA5F0B000880BD /* BaseTableViewController.m */,
+				77FC78C41EAA5EEA000880BD /* BaseTableViewDataSource.h */,
+				77FC78C51EAA5EEA000880BD /* BaseTableViewDataSource.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -593,6 +595,8 @@
 				77191B191E9E746100AE4C82 /* AppDelegate.m in Sources */,
 				77755B971EA50E9C00B20D40 /* OSHelper.m in Sources */,
 				777558891EA117A600B20D40 /* ThemeManager.m in Sources */,
+				77FC78C61EAA5EEA000880BD /* BaseTableViewDataSource.m in Sources */,
+				77FC78C91EAA5F0B000880BD /* BaseTableViewController.m in Sources */,
 				77755BB91EA7972D00B20D40 /* HomeViewController.m in Sources */,
 				77755BB41EA7958300B20D40 /* UIViewController+BarItem.m in Sources */,
 				77755B9B1EA50EEA00B20D40 /* KeychainItemWrapper.m in Sources */,
