@@ -21,6 +21,8 @@
 
 - (void)initNavigationBarItems{
     
+    [super initNavigationBarItems];
+    [self setLeftCustomBarItem:@"location" action:nil];
     self.title = @"首页";
 }
 

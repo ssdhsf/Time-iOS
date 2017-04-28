@@ -18,7 +18,7 @@
     
     [super viewDidLoad];
 
-    [self setLeftCustomBarItem:@"icon_back" action:@selector(back)];
+//  [self setLeftCustomBarItem:@"icon_back" action:@selector(back)];
     [self hideNavigationBlackLine];
     [self addSwipeBack];
     [self initData];
@@ -56,7 +56,7 @@
 - (void)viewWillDisappear:(BOOL)animated {
    
     [super viewWillDisappear:animated];
-    
+
     //友盟统计页面
     NSString *className= NSStringFromClass(self.class);
     [MobClick endLogPageView:className];

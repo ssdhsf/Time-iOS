@@ -30,7 +30,7 @@
 
 - (UIBarButtonItem *)customBarItem:(NSString *)imageName action:(SEL)selector
 {
-    return [self customBarItem:imageName action:selector size:CGSizeMake(20, 20)];
+    return [self customBarItem:imageName action:selector size:CGSizeMake(22, 22)];
 }
 
 - (UIBarButtonItem *)customBarItem:(NSString *)imageName action:(SEL)selector size:(CGSize)itemSize
