@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseTableViewDataSource : UITableViewDataSource
+@interface BaseTableViewDataSource :NSObject<UITableViewDataSource>
 
 @end
