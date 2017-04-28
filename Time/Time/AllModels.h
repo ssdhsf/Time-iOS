@@ -1,12 +1,13 @@
 //
 //  AllModels.h
-//  xixun
+//  Time
 //
-//  Created by huangli on 17/4/18.
-//  Copyright © 2017年 time. All rights reserved.
+//  Created by huangli on 2017/4/27.
+//  Copyright © 2017年 Time. All rights reserved.
 //
 
+#ifndef AllModels_h
+#define AllModels_h
 
 
-
-
+#endif /* AllModels_h */

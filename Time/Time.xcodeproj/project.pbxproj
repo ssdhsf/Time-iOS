@@ -73,6 +73,7 @@
 		77191B351E9E746100AE4C82 /* TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77191B391E9E746100AE4C82 /* TimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeUITests.m; sourceTree = "<group>"; };
 		77191B3B1E9E746100AE4C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77647B851EB2474E00F3D367 /* AllModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllModels.h; sourceTree = "<group>"; };
 		777558831EA111A800B20D40 /* UIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIManager.h; sourceTree = "<group>"; };
 		777558841EA111A800B20D40 /* UIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIManager.m; sourceTree = "<group>"; };
 		777558861EA1120A00B20D40 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 		777558791EA10D8700B20D40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				77647B851EB2474E00F3D367 /* AllModels.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
