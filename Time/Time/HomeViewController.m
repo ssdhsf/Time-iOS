@@ -22,7 +22,10 @@
 - (void)initNavigationBarItems{
     
     [super initNavigationBarItems];
-    [self setLeftCustomBarItem:@"location" action:nil];
+//    [self setLeftCustomBarItem:@"location" action:nil];
+    UIBarButtonItem *item1 = [self customBarItem:@"location" action:nil];
+    UIBarButtonItem *item2 = [[UIBarButtonItem alloc]initWithTitle:@"花都" style:UIBarButtonItemStylePlain target:self action:nil];
+    [self.navigationItem setLeftBarButtonItems:@[item1, item2]];
     self.title = @"首页";
 }
 

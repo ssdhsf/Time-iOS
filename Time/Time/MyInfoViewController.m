@@ -21,6 +21,7 @@
 
 - (void)initNavigationBarItems{
     
+    [super initNavigationBarItems];
     self.title = @"我";
 }
 
