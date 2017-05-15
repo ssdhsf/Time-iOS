@@ -25,8 +25,14 @@
  *  进入主界面
  */
 //+ (void)goMianViewController;
-
 //设置状态栏
 + (void)setStatusBarStyle;
+
+/**
+ *  注册Nib
+ *
+ *  @return Nib
+ */
+- (UINib *)nibWithNibName:(NSString*)nibName;
 
 @end

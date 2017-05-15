@@ -7,8 +7,14 @@
 //
 
 #import "BaseTableViewController.h"
+#import "BaseTableViewDataSource.h"
+
+#define KCELLDEFAULTHEIGHT 44
 
 @interface BaseTableViewController ()
+
+@property (nonatomic, readonly) UITableViewStyle style;
+@property (nonatomic, strong) BaseTableViewDataSource *dataSource;
 
 @end
 
@@ -24,75 +30,137 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (instancetype)initWithStyle:(UITableViewStyle)style{
+    
+    self = [super init];
+    if (self) {
+        _style = style;
+    }
+    return self;
+}
+
+-(void)initView{
+    
+}
+
+- (void)initData{
+    
+    _showRefreshHeader = NO;
+    _showRefreshFooter = NO;
+    _showTableBlankView = NO;
+}
+
+- (void)initTableViewWithFrame:(CGRect )frame{
+    
+    _tableView = [[UITableView alloc] initWithFrame:frame style:self.style];
+    _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [self.view addSubview:_tableView];
+    [[Global sharedSingleton] setExtraCellLineHidden:_tableView];
+    if (_showRefreshHeader) {
+        __weak typeof(self) weakSelf = self;
+        _tableView.header = [MJRefreshNormalHeader headerWithRefreshingTarget:weakSelf refreshingAction:@selector(tableViewDidTriggerHeaderRefresh)];
+        // 触发刷新（加载数据）
+        [self tableViewbeginRefreshing];
+    }
+    
+    if (_showRefreshFooter) {
+        __weak typeof(self) weakSelf = self;
+        _tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:weakSelf refreshingAction:@selector(tableViewDidTriggerFooterRefresh)];
+    }
+}
+
+
+- (void)steupTableViewWithDataSource:(BaseTableViewDataSource *)dataSource
+                      cellIdentifier:(NSString *)identifier
+                             nibName:(NSString *)nibName{
+    
+    self.tableView.dataSource = dataSource;
+    [self.tableView registerNib:[[UIManager sharedUIManager]nibWithNibName:nibName] forCellReuseIdentifier:identifier];
+}
+
+/**
+ *  上拉刷新数据
+ */
+- (void)tableViewDidTriggerHeaderRefresh {
+    
+    self.page_no = 1;
+    [self refreshData];
+}
+
+/**
+ *  下拉刷新数据
+ */
+- (void)tableViewDidTriggerFooterRefresh {
+    
+    self.page_no  ++;
+    [self refreshData];
+}
+
+
+- (void)showRefresh{
+    
+    _showRefreshHeader = YES;
+    _showRefreshFooter = YES;
+    _showTableBlankView = YES;
+}
+
+- (void)tableViewEndRefreshing {
+    
+    [self.tableView.footer endRefreshing];
+    [self.tableView.header endRefreshing];
+}
+
+- (void)tableViewbeginRefreshing {
+    
+    [self.tableView.header beginRefreshing];
+}
+- (void)refreshData{
+    
+    // subClass execute
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    // Return the number of sections.
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
+    // Return the number of rows in the section.
     return 0;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"UITableViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark - Table view delegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    return 0;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return KCELLDEFAULTHEIGHT;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+- (void)back {
+    
+    [super back];
 }
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

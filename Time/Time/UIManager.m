@@ -105,5 +105,10 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
 }
 
+- (UINib *)nibWithNibName:(NSString*)nibName{
+    
+    return [UINib nibWithNibName:nibName bundle:nil];
+}
+
 
 @end
