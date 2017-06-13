@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Time. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TBaseViewController.h"
 
-@interface CodeViewController : ViewController
+@interface CodeViewController : TBaseViewController
 
 @end
