@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Time. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BaseViewController.h"
 
 @interface MyInfoViewController : BaseViewController
 
