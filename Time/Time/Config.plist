@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>System</key>
+	<dict>
+		<key>SysClient</key>
+		<string>Time</string>
+	</dict>
+	<key>ApiHost</key>
+	<dict>
+		<key>Develop</key>
+		<string></string>
+		<key>Testing</key>
+		<string></string>
+		<key>Official</key>
+		<string></string>
+	</dict>
+	<key>UMeng</key>
+	<dict>
+		<key>UMengAppKey</key>
+		<string>58fa1b2a8630f53770001972
+</string>
+		<key>UMengChannel</key>
+		<string>Time</string>
+	</dict>
+	<key>Gaode</key>
+	<dict>
+		<key>AMAPKEY</key>
+		<string>97eb54036d3bb0acad021a1f9c5bab31</string>
+	</dict>
+</dict>
+</plist>

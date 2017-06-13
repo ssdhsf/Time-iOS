@@ -1,18 +1,18 @@
 //
-//  CodeViewController.m
+//  HomeViewController.m
 //  Time
 //
-//  Created by huangli on 2017/4/17.
+//  Created by huangli on 2017/4/19.
 //  Copyright © 2017年 Time. All rights reserved.
 //
 
-#import "CodeViewController.h"
+#import "HomeViewController.h"
 
-@interface CodeViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation CodeViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +22,11 @@
 - (void)initNavigationBarItems{
     
     [super initNavigationBarItems];
-    self.title = @"扫码";
+//    [self setLeftCustomBarItem:@"location" action:nil];
+    UIBarButtonItem *item1 = [self customBarItem:@"location" action:nil];
+    UIBarButtonItem *item2 = [[UIBarButtonItem alloc]initWithTitle:@"花都" style:UIBarButtonItemStylePlain target:self action:nil];
+    [self.navigationItem setLeftBarButtonItems:@[item1, item2]];
+    self.title = @"首页";
 }
 
 - (void)didReceiveMemoryWarning {

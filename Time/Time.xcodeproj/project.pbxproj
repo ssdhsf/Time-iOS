@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		77191B161E9E746100AE4C82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77191B151E9E746100AE4C82 /* main.m */; };
 		77191B191E9E746100AE4C82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77191B181E9E746100AE4C82 /* AppDelegate.m */; };
+		77191B1C1E9E746100AE4C82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77191B1B1E9E746100AE4C82 /* ViewController.m */; };
 		77191B1F1E9E746100AE4C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77191B1D1E9E746100AE4C82 /* Main.storyboard */; };
 		77191B211E9E746100AE4C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77191B201E9E746100AE4C82 /* Assets.xcassets */; };
 		77191B241E9E746100AE4C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77191B221E9E746100AE4C82 /* LaunchScreen.storyboard */; };
@@ -25,8 +26,15 @@
 		77755BA31EA5154200B20D40 /* CodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77755BA11EA5154200B20D40 /* CodeViewController.xib */; };
 		77755BA71EA5155900B20D40 /* MyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755BA51EA5155900B20D40 /* MyInfoViewController.m */; };
 		77755BA81EA5155900B20D40 /* MyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77755BA61EA5155900B20D40 /* MyInfoViewController.xib */; };
+		77755BB01EA794BF00B20D40 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755BAF1EA794BF00B20D40 /* BaseViewController.m */; };
+		77755BB41EA7958300B20D40 /* UIViewController+BarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755BB31EA7958300B20D40 /* UIViewController+BarItem.m */; };
+		77755BB91EA7972D00B20D40 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77755BB71EA7972D00B20D40 /* HomeViewController.m */; };
+		77755BBA1EA7972D00B20D40 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77755BB81EA7972D00B20D40 /* HomeViewController.xib */; };
+		77FC78BF1EAA4CF6000880BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FC78BE1EAA4CF6000880BD /* UIKit.framework */; };
+		77FC78C11EAA5333000880BD /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77FC78C01EAA5333000880BD /* Config.plist */; };
+		77FC78C61EAA5EEA000880BD /* BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FC78C51EAA5EEA000880BD /* BaseTableViewDataSource.m */; };
+		77FC78C91EAA5F0B000880BD /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FC78C81EAA5F0B000880BD /* BaseTableViewController.m */; };
 		92075D633DF6DD7930F30921 /* libPods-Time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 382FC5678BAD06060534C32A /* libPods-Time.a */; };
-		BA6FD46E1EEFC505007971F4 /* TBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6FD46D1EEFC505007971F4 /* TBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +59,10 @@
 		47BCDD04B32520D945C97B38 /* Pods-Time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time/Pods-Time.debug.xcconfig"; sourceTree = "<group>"; };
 		77191B111E9E746100AE4C82 /* Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Time.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77191B151E9E746100AE4C82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		77191B171E9E746100AE4C82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Time/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		77191B181E9E746100AE4C82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Time/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		77191B171E9E746100AE4C82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77191B181E9E746100AE4C82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77191B1A1E9E746100AE4C82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		77191B1B1E9E746100AE4C82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77191B1E1E9E746100AE4C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77191B201E9E746100AE4C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77191B231E9E746100AE4C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +73,7 @@
 		77191B351E9E746100AE4C82 /* TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77191B391E9E746100AE4C82 /* TimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeUITests.m; sourceTree = "<group>"; };
 		77191B3B1E9E746100AE4C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77647B851EB2474E00F3D367 /* AllModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllModels.h; sourceTree = "<group>"; };
 		777558831EA111A800B20D40 /* UIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIManager.h; sourceTree = "<group>"; };
 		777558841EA111A800B20D40 /* UIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIManager.m; sourceTree = "<group>"; };
 		777558861EA1120A00B20D40 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -83,9 +94,22 @@
 		77755BA41EA5155900B20D40 /* MyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInfoViewController.h; sourceTree = "<group>"; };
 		77755BA51EA5155900B20D40 /* MyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInfoViewController.m; sourceTree = "<group>"; };
 		77755BA61EA5155900B20D40 /* MyInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyInfoViewController.xib; sourceTree = "<group>"; };
+		77755BAE1EA794BF00B20D40 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		77755BAF1EA794BF00B20D40 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		77755BB21EA7958300B20D40 /* UIViewController+BarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BarItem.h"; sourceTree = "<group>"; };
+		77755BB31EA7958300B20D40 /* UIViewController+BarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BarItem.m"; sourceTree = "<group>"; };
+		77755BB61EA7972D00B20D40 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		77755BB71EA7972D00B20D40 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		77755BB81EA7972D00B20D40 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		77FC78BE1EAA4CF6000880BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		77FC78C01EAA5333000880BD /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		77FC78C21EAA53BB000880BD /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		77FC78C31EAA5AED000880BD /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		77FC78C41EAA5EEA000880BD /* BaseTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewDataSource.h; sourceTree = "<group>"; };
+		77FC78C51EAA5EEA000880BD /* BaseTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewDataSource.m; sourceTree = "<group>"; };
+		77FC78C71EAA5F0A000880BD /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		77FC78C81EAA5F0B000880BD /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		876A9BE46B940F79E2CBE1F7 /* Pods-Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time/Pods-Time.release.xcconfig"; sourceTree = "<group>"; };
-		BA6FD46C1EEFC505007971F4 /* TBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBaseViewController.h; sourceTree = "<group>"; };
-		BA6FD46D1EEFC505007971F4 /* TBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FC78BF1EAA4CF6000880BD /* UIKit.framework in Frameworks */,
 				92075D633DF6DD7930F30921 /* libPods-Time.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +142,7 @@
 		5354205BB570B3FC7FEF9CC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77FC78BE1EAA4CF6000880BD /* UIKit.framework */,
 				382FC5678BAD06060534C32A /* libPods-Time.a */,
 			);
 			name = Frameworks;
@@ -147,16 +173,25 @@
 		77191B131E9E746100AE4C82 /* Time */ = {
 			isa = PBXGroup;
 			children = (
-				BA6FD46B1EEFC477007971F4 /* AppDelegate */,
 				777558791EA10D8700B20D40 /* Models */,
 				777558811EA10FC200B20D40 /* General */,
 				777558801EA10E4500B20D40 /* Vendors */,
 				7775587F1EA10E3A00B20D40 /* Global */,
 				7775587E1EA10E2800B20D40 /* Macros */,
 				7775587D1EA10E0D00B20D40 /* Store */,
+				77755BAD1EA7947800B20D40 /* Base */,
 				7775587C1EA10DEE00B20D40 /* DataBase */,
 				7775587B1EA10DCB00B20D40 /* ViewController */,
 				7775587A1EA10DB100B20D40 /* Interface */,
+				77191B171E9E746100AE4C82 /* AppDelegate.h */,
+				77191B181E9E746100AE4C82 /* AppDelegate.m */,
+				77191B1A1E9E746100AE4C82 /* ViewController.h */,
+				77191B1B1E9E746100AE4C82 /* ViewController.m */,
+				777558861EA1120A00B20D40 /* PrefixHeader.pch */,
+				77191B1D1E9E746100AE4C82 /* Main.storyboard */,
+				77191B201E9E746100AE4C82 /* Assets.xcassets */,
+				77191B221E9E746100AE4C82 /* LaunchScreen.storyboard */,
+				77191B251E9E746100AE4C82 /* Info.plist */,
 				77191B141E9E746100AE4C82 /* Supporting Files */,
 			);
 			path = Time;
@@ -165,12 +200,8 @@
 		77191B141E9E746100AE4C82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				777558861EA1120A00B20D40 /* PrefixHeader.pch */,
-				77191B1D1E9E746100AE4C82 /* Main.storyboard */,
-				77191B201E9E746100AE4C82 /* Assets.xcassets */,
-				77191B221E9E746100AE4C82 /* LaunchScreen.storyboard */,
-				77191B251E9E746100AE4C82 /* Info.plist */,
 				77755B921EA50E0300B20D40 /* Entitlements.plist */,
+				77FC78C01EAA5333000880BD /* Config.plist */,
 				77191B151E9E746100AE4C82 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -197,6 +228,7 @@
 		777558791EA10D8700B20D40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				77647B851EB2474E00F3D367 /* AllModels.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -211,7 +243,7 @@
 		7775587B1EA10DCB00B20D40 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7775588F1EA11A2F00B20D40 /* BaseViewController */,
+				77755BB51EA7970500B20D40 /* HomeViewController */,
 				777558901EA11A4300B20D40 /* MyInfoViewController */,
 				7775588E1EA119F500B20D40 /* CodeViewController */,
 				7775588A1EA117C400B20D40 /* ThemeNavigationController */,
@@ -236,6 +268,8 @@
 		7775587E1EA10E2800B20D40 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				77FC78C21EAA53BB000880BD /* Config.h */,
+				77FC78C31EAA5AED000880BD /* Macros.h */,
 			);
 			name = Macros;
 			sourceTree = "<group>";
@@ -252,6 +286,7 @@
 		777558801EA10E4500B20D40 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				77755BB11EA7955000B20D40 /* Category */,
 				77755B981EA50EEA00B20D40 /* Keychain */,
 			);
 			name = Vendors;
@@ -294,15 +329,6 @@
 			name = CodeViewController;
 			sourceTree = "<group>";
 		};
-		7775588F1EA11A2F00B20D40 /* BaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				BA6FD46C1EEFC505007971F4 /* TBaseViewController.h */,
-				BA6FD46D1EEFC505007971F4 /* TBaseViewController.m */,
-			);
-			name = BaseViewController;
-			sourceTree = "<group>";
-		};
 		777558901EA11A4300B20D40 /* MyInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,13 +359,36 @@
 			path = Keychain;
 			sourceTree = "<group>";
 		};
-		BA6FD46B1EEFC477007971F4 /* AppDelegate */ = {
+		77755BAD1EA7947800B20D40 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				77191B171E9E746100AE4C82 /* AppDelegate.h */,
-				77191B181E9E746100AE4C82 /* AppDelegate.m */,
+				77755BAE1EA794BF00B20D40 /* BaseViewController.h */,
+				77755BAF1EA794BF00B20D40 /* BaseViewController.m */,
+				77FC78C71EAA5F0A000880BD /* BaseTableViewController.h */,
+				77FC78C81EAA5F0B000880BD /* BaseTableViewController.m */,
+				77FC78C41EAA5EEA000880BD /* BaseTableViewDataSource.h */,
+				77FC78C51EAA5EEA000880BD /* BaseTableViewDataSource.m */,
 			);
-			path = AppDelegate;
+			name = Base;
+			sourceTree = "<group>";
+		};
+		77755BB11EA7955000B20D40 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				77755BB21EA7958300B20D40 /* UIViewController+BarItem.h */,
+				77755BB31EA7958300B20D40 /* UIViewController+BarItem.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		77755BB51EA7970500B20D40 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77755BB61EA7972D00B20D40 /* HomeViewController.h */,
+				77755BB71EA7972D00B20D40 /* HomeViewController.m */,
+				77755BB81EA7972D00B20D40 /* HomeViewController.xib */,
+			);
+			name = HomeViewController;
 			sourceTree = "<group>";
 		};
 		BED0FEA86C3F843FA5F3A30F /* Pods */ = {
@@ -421,7 +470,7 @@
 				TargetAttributes = {
 					77191B101E9E746000AE4C82 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Z35S33J39R;
+						DevelopmentTeam = K7HH48G2MB;
 						ProvisioningStyle = Automatic;
 					};
 					77191B291E9E746100AE4C82 = {
@@ -467,7 +516,9 @@
 				77755B931EA50E0300B20D40 /* Entitlements.plist in Resources */,
 				77191B241E9E746100AE4C82 /* LaunchScreen.storyboard in Resources */,
 				77191B211E9E746100AE4C82 /* Assets.xcassets in Resources */,
+				77FC78C11EAA5333000880BD /* Config.plist in Resources */,
 				77755BA31EA5154200B20D40 /* CodeViewController.xib in Resources */,
+				77755BBA1EA7972D00B20D40 /* HomeViewController.xib in Resources */,
 				77191B1F1E9E746100AE4C82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,7 +567,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5FD2C9C662F8239459940441 /* [CP] Copy Pods Resources */ = {
@@ -541,14 +592,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77191B1C1E9E746100AE4C82 /* ViewController.m in Sources */,
+				77755BB01EA794BF00B20D40 /* BaseViewController.m in Sources */,
 				77191B191E9E746100AE4C82 /* AppDelegate.m in Sources */,
 				77755B971EA50E9C00B20D40 /* OSHelper.m in Sources */,
 				777558891EA117A600B20D40 /* ThemeManager.m in Sources */,
+				77FC78C61EAA5EEA000880BD /* BaseTableViewDataSource.m in Sources */,
+				77FC78C91EAA5F0B000880BD /* BaseTableViewController.m in Sources */,
+				77755BB91EA7972D00B20D40 /* HomeViewController.m in Sources */,
+				77755BB41EA7958300B20D40 /* UIViewController+BarItem.m in Sources */,
 				77755B9B1EA50EEA00B20D40 /* KeychainItemWrapper.m in Sources */,
 				77755BA21EA5154200B20D40 /* CodeViewController.m in Sources */,
 				7775588D1EA117DD00B20D40 /* ThemeNavigationController.m in Sources */,
 				77755BA71EA5155900B20D40 /* MyInfoViewController.m in Sources */,
-				BA6FD46E1EEFC505007971F4 /* TBaseViewController.m in Sources */,
 				77755B9E1EA5110B00B20D40 /* Global.m in Sources */,
 				77191B161E9E746100AE4C82 /* main.m in Sources */,
 				777558851EA111A800B20D40 /* UIManager.m in Sources */,
@@ -699,9 +755,10 @@
 			baseConfigurationReference = 47BCDD04B32520D945C97B38 /* Pods-Time.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z35S33J39R;
+				DEVELOPMENT_TEAM = K7HH48G2MB;
 				GCC_PREFIX_HEADER = Time/PrefixHeader.pch;
 				INFOPLIST_FILE = Time/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.time.Time;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -713,9 +770,10 @@
 			baseConfigurationReference = 876A9BE46B940F79E2CBE1F7 /* Pods-Time.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z35S33J39R;
+				DEVELOPMENT_TEAM = K7HH48G2MB;
 				GCC_PREFIX_HEADER = Time/PrefixHeader.pch;
 				INFOPLIST_FILE = Time/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.time.Time;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -21,8 +21,18 @@
     // 启动画面的显示时间为2秒
     [NSThread sleepForTimeInterval:1.0];
     [OSHelper setKeyChainValue];
+    
+#if TARGET_IPHONE_SIMULATOR
+    
+    //模拟器不接收推送信息和闪退统计
+    
+#else
+    
+    [MobClick startWithAppkey:UMengAppKey reportPolicy:BATCH   channelId:UMengChannel];
+    
+#endif
 
-    // Override point for customization after application launch.
+
     return YES;
 }
 

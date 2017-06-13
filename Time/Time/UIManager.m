@@ -45,14 +45,14 @@
     AppDelegate * appDelegate = [[self class] appDelegate];
     appDelegate.window = [[self class] newWindow];
     UITabBarController *tabBarController=[[UITabBarController alloc]init];
-    ThemeNavigationController *nav1 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ChatViewController"]];
-    ThemeNavigationController *nav2 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ContactsMainViewController"]];
-//    ThemeNavigationController *nav3 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"ApplicationMainViewController"]];
-//    ThemeNavigationController *nav4 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"MineMainViewController"]];
+    ThemeNavigationController *nav1 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"HomeViewController"]];
+    ThemeNavigationController *nav2 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"CodeViewController"]];
+    ThemeNavigationController *nav3 = [[ThemeNavigationController alloc]initWithRootViewController:[[self class] viewControllerWithName:@"MyInfoViewController"]];
     
-    [nav1 setTitle:@"扫码" tabBarItemImageName:@"tabbar_icon_code_default" tabBarItemSelectedImageName:@"tabbar_icon_code_default"];
-    [nav2 setTitle:@"我的" tabBarItemImageName:@"tabbar_icon_my_default" tabBarItemSelectedImageName:@"tabbar_icon_my_default"];
-    NSArray*array = @[nav1,nav2];
+    [nav1 setTitle:@"首页" tabBarItemImageName:@"tabbar_icon_home_default" tabBarItemSelectedImageName:@"tabbar_icon_home_default"];
+    [nav2 setTitle:@"扫码" tabBarItemImageName:@"tabbar_icon_code_default" tabBarItemSelectedImageName:@"tabbar_icon_code_select"];
+    [nav3 setTitle:@"我的" tabBarItemImageName:@"tabbar_icon_my_default" tabBarItemSelectedImageName:@"tabbar_icon_my_select"];
+    NSArray*array = @[nav1,nav2,nav3];
     tabBarController.viewControllers = array;
 //    [tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"tabBar_background_blue"]];
     appDelegate.tabBarController = tabBarController;
@@ -99,6 +99,15 @@
     Class cls = NSClassFromString(vcName);
     UIViewController * vc = [[cls alloc] initWithNibName:vcName bundle:[NSBundle mainBundle]];
     return vc;
+}
+
++ (void)setStatusBarStyle{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+}
+
+- (UINib *)nibWithNibName:(NSString*)nibName{
+    
+    return [UINib nibWithNibName:nibName bundle:nil];
 }
 
 
