@@ -7,8 +7,10 @@
 //
 
 #import "CodeViewController.h"
+#import "ScanViewController.h"
 
 @interface CodeViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -16,28 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.textView yj_clipLayerWithRadius:0 width:1 color:[UIColor lightGrayColor]];
 }
 
 - (void)initNavigationBarItems{
-    
     [super initNavigationBarItems];
     self.title = @"扫码";
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)scanAction:(UIButton *)sender {
+    ScanViewController *scanVC = [[ScanViewController alloc] init];
+    weakSelf(wSelf);
+    scanVC.ScanBlock = ^(NSString *scanResult){
+        wSelf.textView.text = scanResult;
+    };
+    self.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:scanVC animated:YES];
+    self.hidesBottomBarWhenPushed=NO;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

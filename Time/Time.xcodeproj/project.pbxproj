@@ -34,6 +34,15 @@
 		77FC78C61EAA5EEA000880BD /* BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FC78C51EAA5EEA000880BD /* BaseTableViewDataSource.m */; };
 		77FC78C91EAA5F0B000880BD /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FC78C81EAA5F0B000880BD /* BaseTableViewController.m */; };
 		92075D633DF6DD7930F30921 /* libPods-Time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 382FC5678BAD06060534C32A /* libPods-Time.a */; };
+		BA571A761EF1156300741861 /* UIView+YJExt.m in Sources */ = {isa = PBXBuildFile; fileRef = BA571A751EF1156300741861 /* UIView+YJExt.m */; };
+		BA571A7A1EF116CC00741861 /* NSObject+YJExt.m in Sources */ = {isa = PBXBuildFile; fileRef = BA571A791EF116CC00741861 /* NSObject+YJExt.m */; };
+		BA571A7D1EF11B1300741861 /* NSError+YJExt.m in Sources */ = {isa = PBXBuildFile; fileRef = BA571A7C1EF11B1300741861 /* NSError+YJExt.m */; };
+		BA571A801EF11F0F00741861 /* NSDate+YJExt.m in Sources */ = {isa = PBXBuildFile; fileRef = BA571A7F1EF11F0F00741861 /* NSDate+YJExt.m */; };
+		BA571A831EF11FDD00741861 /* NSString+YJExt.m in Sources */ = {isa = PBXBuildFile; fileRef = BA571A821EF11FDD00741861 /* NSString+YJExt.m */; };
+		BA571A8B1EF122E500741861 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA571A8A1EF122E500741861 /* ScanViewController.m */; };
+		BA571A8E1EF1268E00741861 /* ScanVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA571A8D1EF1268E00741861 /* ScanVisualEffectView.m */; };
+		BA571A911EF1280900741861 /* YJ_ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA571A901EF1280900741861 /* YJ_ScanView.m */; };
+		BA571A931EF1282400741861 /* YJ_ScanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA571A921EF1282400741861 /* YJ_ScanView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +116,25 @@
 		77FC78C71EAA5F0A000880BD /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		77FC78C81EAA5F0B000880BD /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		876A9BE46B940F79E2CBE1F7 /* Pods-Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time.release.xcconfig"; path = "Pods/Target Support Files/Pods-Time/Pods-Time.release.xcconfig"; sourceTree = "<group>"; };
+		BA571A711EF113CA00741861 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BA571A741EF1156300741861 /* UIView+YJExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YJExt.h"; sourceTree = "<group>"; };
+		BA571A751EF1156300741861 /* UIView+YJExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YJExt.m"; sourceTree = "<group>"; };
+		BA571A771EF1168800741861 /* YJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJExtension.h; sourceTree = "<group>"; };
+		BA571A781EF116CC00741861 /* NSObject+YJExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YJExt.h"; sourceTree = "<group>"; };
+		BA571A791EF116CC00741861 /* NSObject+YJExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJExt.m"; sourceTree = "<group>"; };
+		BA571A7B1EF11B1300741861 /* NSError+YJExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+YJExt.h"; sourceTree = "<group>"; };
+		BA571A7C1EF11B1300741861 /* NSError+YJExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+YJExt.m"; sourceTree = "<group>"; };
+		BA571A7E1EF11F0F00741861 /* NSDate+YJExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YJExt.h"; sourceTree = "<group>"; };
+		BA571A7F1EF11F0F00741861 /* NSDate+YJExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YJExt.m"; sourceTree = "<group>"; };
+		BA571A811EF11FDD00741861 /* NSString+YJExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YJExt.h"; sourceTree = "<group>"; };
+		BA571A821EF11FDD00741861 /* NSString+YJExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YJExt.m"; sourceTree = "<group>"; };
+		BA571A891EF122E500741861 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		BA571A8A1EF122E500741861 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		BA571A8C1EF1268E00741861 /* ScanVisualEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanVisualEffectView.h; sourceTree = "<group>"; };
+		BA571A8D1EF1268E00741861 /* ScanVisualEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanVisualEffectView.m; sourceTree = "<group>"; };
+		BA571A8F1EF1280900741861 /* YJ_ScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJ_ScanView.h; sourceTree = "<group>"; };
+		BA571A901EF1280900741861 /* YJ_ScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJ_ScanView.m; sourceTree = "<group>"; };
+		BA571A921EF1282400741861 /* YJ_ScanView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YJ_ScanView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +198,7 @@
 		77191B131E9E746100AE4C82 /* Time */ = {
 			isa = PBXGroup;
 			children = (
+				BA571A731EF114BC00741861 /* Category */,
 				777558791EA10D8700B20D40 /* Models */,
 				777558811EA10FC200B20D40 /* General */,
 				777558801EA10E4500B20D40 /* Vendors */,
@@ -274,6 +303,7 @@
 			children = (
 				77755B9C1EA5110B00B20D40 /* Global.h */,
 				77755B9D1EA5110B00B20D40 /* Global.m */,
+				BA571A711EF113CA00741861 /* Constants.h */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -320,6 +350,7 @@
 				77755B9F1EA5154200B20D40 /* CodeViewController.h */,
 				77755BA01EA5154200B20D40 /* CodeViewController.m */,
 				77755BA11EA5154200B20D40 /* CodeViewController.xib */,
+				BA571A841EF1226700741861 /* Scan */,
 			);
 			name = CodeViewController;
 			sourceTree = "<group>";
@@ -384,6 +415,70 @@
 				77755BB81EA7972D00B20D40 /* HomeViewController.xib */,
 			);
 			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		BA571A731EF114BC00741861 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BA571A741EF1156300741861 /* UIView+YJExt.h */,
+				BA571A751EF1156300741861 /* UIView+YJExt.m */,
+				BA571A781EF116CC00741861 /* NSObject+YJExt.h */,
+				BA571A791EF116CC00741861 /* NSObject+YJExt.m */,
+				BA571A7B1EF11B1300741861 /* NSError+YJExt.h */,
+				BA571A7C1EF11B1300741861 /* NSError+YJExt.m */,
+				BA571A7E1EF11F0F00741861 /* NSDate+YJExt.h */,
+				BA571A7F1EF11F0F00741861 /* NSDate+YJExt.m */,
+				BA571A811EF11FDD00741861 /* NSString+YJExt.h */,
+				BA571A821EF11FDD00741861 /* NSString+YJExt.m */,
+				BA571A771EF1168800741861 /* YJExtension.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BA571A841EF1226700741861 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				BA571A851EF122CF00741861 /* Controller */,
+				BA571A861EF122CF00741861 /* Model */,
+				BA571A871EF122CF00741861 /* View */,
+				BA571A881EF122CF00741861 /* ViewModel */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		BA571A851EF122CF00741861 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA571A891EF122E500741861 /* ScanViewController.h */,
+				BA571A8A1EF122E500741861 /* ScanViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA571A861EF122CF00741861 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA571A871EF122CF00741861 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA571A8C1EF1268E00741861 /* ScanVisualEffectView.h */,
+				BA571A8D1EF1268E00741861 /* ScanVisualEffectView.m */,
+				BA571A8F1EF1280900741861 /* YJ_ScanView.h */,
+				BA571A901EF1280900741861 /* YJ_ScanView.m */,
+				BA571A921EF1282400741861 /* YJ_ScanView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA571A881EF122CF00741861 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		BED0FEA86C3F843FA5F3A30F /* Pods */ = {
@@ -465,7 +560,7 @@
 				TargetAttributes = {
 					77191B101E9E746000AE4C82 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = K7HH48G2MB;
+						DevelopmentTeam = Z35S33J39R;
 						ProvisioningStyle = Automatic;
 					};
 					77191B291E9E746100AE4C82 = {
@@ -515,6 +610,7 @@
 				77755BA31EA5154200B20D40 /* CodeViewController.xib in Resources */,
 				77755BBA1EA7972D00B20D40 /* HomeViewController.xib in Resources */,
 				77191B1F1E9E746100AE4C82 /* Main.storyboard in Resources */,
+				BA571A931EF1282400741861 /* YJ_ScanView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,11 +684,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				77755BB01EA794BF00B20D40 /* BaseViewController.m in Sources */,
+				BA571A761EF1156300741861 /* UIView+YJExt.m in Sources */,
+				BA571A831EF11FDD00741861 /* NSString+YJExt.m in Sources */,
+				BA571A7A1EF116CC00741861 /* NSObject+YJExt.m in Sources */,
+				BA571A8B1EF122E500741861 /* ScanViewController.m in Sources */,
 				77191B191E9E746100AE4C82 /* AppDelegate.m in Sources */,
+				BA571A8E1EF1268E00741861 /* ScanVisualEffectView.m in Sources */,
+				BA571A801EF11F0F00741861 /* NSDate+YJExt.m in Sources */,
 				77755B971EA50E9C00B20D40 /* OSHelper.m in Sources */,
 				777558891EA117A600B20D40 /* ThemeManager.m in Sources */,
 				77FC78C61EAA5EEA000880BD /* BaseTableViewDataSource.m in Sources */,
+				BA571A911EF1280900741861 /* YJ_ScanView.m in Sources */,
 				77FC78C91EAA5F0B000880BD /* BaseTableViewController.m in Sources */,
+				BA571A7D1EF11B1300741861 /* NSError+YJExt.m in Sources */,
 				77755BB91EA7972D00B20D40 /* HomeViewController.m in Sources */,
 				77755BB41EA7958300B20D40 /* UIViewController+BarItem.m in Sources */,
 				77755B9B1EA50EEA00B20D40 /* KeychainItemWrapper.m in Sources */,
@@ -749,7 +853,7 @@
 			baseConfigurationReference = 47BCDD04B32520D945C97B38 /* Pods-Time.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K7HH48G2MB;
+				DEVELOPMENT_TEAM = Z35S33J39R;
 				GCC_PREFIX_HEADER = Time/PrefixHeader.pch;
 				INFOPLIST_FILE = Time/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -764,7 +868,7 @@
 			baseConfigurationReference = 876A9BE46B940F79E2CBE1F7 /* Pods-Time.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K7HH48G2MB;
+				DEVELOPMENT_TEAM = Z35S33J39R;
 				GCC_PREFIX_HEADER = Time/PrefixHeader.pch;
 				INFOPLIST_FILE = Time/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

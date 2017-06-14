@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -28,7 +29,7 @@
     
 #else
     
-    [MobClick startWithAppkey:UMengAppKey reportPolicy:BATCH   channelId:UMengChannel];
+//    [MobClick startWithAppkey:UMengAppKey reportPolicy:BATCH   channelId:UMengChannel];
     
 #endif
 
